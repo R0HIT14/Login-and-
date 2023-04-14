@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  /* user-select: none; */
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.imgcontainer {
+  width: 50%;
+  height: 100%;
+}
+
+.mid {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 10px 0px 50px 200px;
+}
+
+.svglogin {
+  height: 100vh;
+}
+
+.logincard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f5ef;
+  width: 400px;
+  height: max-content;
+  box-shadow: 1px 1px 10px rgb(60, 170, 155);
+  border-radius: 10px;
+}
+
+.selectmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  margin: 8px;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.selectmenu > a {
+  text-decoration: none;
+  font: bold;
+  width: 161px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.selected {
+  color: white;
+  background-color: #ce5900;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.cardtitle {
+  color: black;
+  text-decoration: underline;
+  padding: 10px 4px 0px 4px;
+  font: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.carddesc {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.inputarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 0px 15px 0px 15px;
+}
+
+.inputfield {
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.inputfield::placeholder {
+  color: rgb(168, 168, 168);
+}
+
+.passinput {
+  margin-top: 10px;
+}
+.logginbtn-containe{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginbtn {
+  font: bold;
+  background-color: #ffeaca;
+  outline: none;
+  border: none;
+  width: max-content;
+  height: 50px;
+  font-size: 20px;
+  color: #121717;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+.loginbtn:hover {
+  background-color: rgb(219, 74, 74);
+}
+.logginbtn-containe {
+  padding: 5px;
+}
+ 
+.checkbox-click {
+  cursor: pointer;
+}
+.rememberme-box {
+  display: flex;
+  align-items: center;
+}
+.firstcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+  margin-bottom: 8px;
+}
+
+.remeberme {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  margin-left: 4px;
+}
+
+.forgetpass_title {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+.doubleinput {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.doubleinput > input {
+  width: 47%;
+}
+
+.phonenumber_container {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.phonecode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  height: 40px;
+  border-right: 1px solid #00cec8;
+  padding-right: 8px;
+  left: 10px;
+  font-size: 14px;
+}
+
+.phonenumber_input {
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.gender-age {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ageinput {
+  margin-top: 10px;
+  width: 44%;
+  padding-right: 10px;
+}
+
+.radiobtns {
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+
+.radiobtns > div > span {
+  font-size: 14px;
+}

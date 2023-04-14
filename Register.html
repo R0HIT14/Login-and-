@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Doctor | Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imgcontainer">
+        <div><img class="svglogin" src="pics/2.png" /></div>
+      </div>
+      <div class="logincontainer">
+        <!--  login card -->
+        <div class="logincard">
+          <div>
+            <!-- select menu -->
+            <div class="selectmenu">
+              <!-- select menu options -->
+              <a href="index.html" class="">Login</a>
+              <a class="mid selected">Register</a>
+              <a>Doctor Login</a>
+            </div>
+            <div class="cardtitle">Registerations!</div>
+
+            <div class="inputarea">
+              <input
+                id="usernamefield"
+                placeholder="Enter your Name"
+                class="inputfield"
+              />
+              <input
+                id="emailfield"
+                placeholder="Enter your Email ID"
+                class="inputfield passinput"
+              />
+              <div class="doubleinput">
+                <input
+                  id="passfield"
+                  placeholder="Enter your Password"
+                  class="inputfield passinput"
+                  type="password"
+                />
+                <input
+                  type="password"
+                  id="confirmpassfield"
+                  placeholder="Please confirm your password"
+                  class="inputfield passinput"
+                />
+              </div>
+              <div class="phonenumber_container">
+                <input
+                  id="phonefield"
+                  placeholder="Enter your phone number"
+                  type="number"
+                  class="inputfield phonenumber_input"
+                />
+                <div class="phonecode">+91</div>
+              </div>
+              <div class="gender-age">
+                <div class="radiobtns">
+                  <div class="maleradio">
+                    <input
+                      onclick="getMale_Female(this.value)"
+                      value="male"
+                      id="malefield"
+                      type="radio"
+                      name="gender"
+                    />
+                    <span class="malespan">MALE</span>
+                  </div>
+                  <div class="femaleradio">
+                    <input
+                      onclick="getMale_Female(this.value)"
+                      value="female"
+                      id="femalefield"
+                      type="radio"
+                      name="gender"
+                    />
+                    <span class="femalespan">FEMALE</span>
+                  </div>
+                </div>
+                <input
+                  id="agefield"
+                  type="date"
+                  placeholder="Please confirm your password"
+                  class="inputfield ageinput"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- login button -->
+          <div class="logginbtn-containe">
+            <div class="firstcontainer">
+              <div class="rememberme-box">
+                <input class="checkbox-click" type="checkbox" />
+                <span class="remeberme">Remember Me</span>
+              </div>
+              <div class="forgetpass_title">Already have an account ?</div>
+            </div>
+            <button class="loginbtn" onclick="Register()">REGISTER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

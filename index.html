@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Doctor | Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imgcontainer">
+        <div><img class="svglogin" src="pics/login.svg" /></div>
+      </div>
+      <div class="logincontainer">
+        <!--  login card -->
+        <div class="logincard">
+          <div>
+            <!-- select menu -->
+            <div class="selectmenu">
+              <!-- select menu options -->
+              <a class="selected">Login</a>
+              <a href="Register.html" class="mid">Register</a>
+              <a>Doctor Login</a>
+            </div>
+
+            <div class="inputarea">
+              <input
+                id="emailfield"
+                placeholder="Enter your Email ID"
+                class="inputfield"
+                type="email"
+              />
+              <input
+                id="passwordfield"
+                placeholder="Enter your Password"
+                type="password"
+                class="inputfield passinput"
+              />
+            </div>
+          </div>
+          <!-- login button -->
+          <div class="logginbtn-containe">
+            <div class="firstcontainer">
+              <div class="rememberme-box">
+                <input class="checkbox-click" type="checkbox" />
+                <span class="remeberme">Remember Me</span>
+              </div>
+              <div class="forgetpass_title">Forget Pass?</div>
+            </div>
+            <button onclick="login()" class="loginbtn">LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="login.js"></script>
+  </body>
+</html>
